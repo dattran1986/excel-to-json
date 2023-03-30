@@ -1,6 +1,6 @@
 {
   "name": "simple-excel-2-json",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert Excel to JSON",
   "homepage": "https://github.com/dattran1986/excel-to-json#readme",
   "main": "./lib/excel-to-json.js",
