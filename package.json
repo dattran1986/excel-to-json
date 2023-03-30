@@ -1,14 +1,10 @@
 {
-  "name": "excel-to-json",
+  "name": "easy-excel-to-json",
   "version": "1.0.0",
   "description": "Convert Excel to JSON",
-  "homepage": "",
+  "homepage": "https://github.com/dattran1986/excel-to-json#readme",
   "main": "./lib/excel-to-json.js",
-  "author": {
-    "name": "Dat Tran",
-    "email": "dattraninfo@gmail.com",
-    "url": "https://github.com/dattran1986/"
-  },
+  "author": "Dat Tran <dattraninfo@gmail.com> (https://github.com/dattran1986/)",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -27,5 +23,12 @@
   },
   "devDependencies": {
     "mocha": "^10.2.0"
+  },
+  "bugs": {
+    "url": "https://github.com/dattran1986/excel-to-json/issues"
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "tests"
   }
 }
