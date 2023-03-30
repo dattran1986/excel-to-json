@@ -1,0 +1,31 @@
+{
+  "name": "excel-to-json",
+  "version": "1.0.0",
+  "description": "Convert Excel to JSON",
+  "homepage": "",
+  "main": "./lib/excel-to-json.js",
+  "author": {
+    "name": "Dat Tran",
+    "email": "dattraninfo@gmail.com",
+    "url": "https://github.com/dattran1986/"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/dattran1986/excel-to-json.git"
+  },
+  "keywords": [
+    "excel to json",
+    "converts excel"
+  ],
+  "scripts": {
+    "test": "mocha ./tests -b"
+  },
+  "dependencies": {
+    "node.extend": "^2.0.2",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0"
+  }
+}
