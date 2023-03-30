@@ -1,5 +1,7 @@
 # excel-to-json
 
+This module is copied from https://www.npmjs.com/package/convert-excel-to-json but removed the outdated libs and upgrade with latest versions of dependecies.
+
 Convert Excel to JSON, mapping sheet columns to object keys.
 
 Key features:
@@ -12,38 +14,18 @@ Key features:
 ### NPM / Node
 
 ```javascript
-npm install excel-to-json
+npm install simple-excel-2-json
 ```
 
 or to use it via command-line
 
 ```javascript
-npm install -g convert-excel-to-json
+npm install -g simple-excel-2-json
 ```
 
 ## Usage / Examples
 
 For all the examples, lets suppose that our excel file has two sheets, named as 'sheet1' and 'sheet2'.
-
-### CLI
-
-OBS: All the following examples can be used via command-line, in this case, the `--config` parameter expects a valid JSON string.
-
-```javascript
-$ convert-excel-to-json --config='{"sourceFile": "tests/test-data.xlsx"}'
-```
-
-In order to use it passing in only the **sourceFile** without extra configuration:
-
-```javascript
-$ convert-excel-to-json --sourceFile="tests/test-data.xlsx"
-```
-
-To check the help section:
-
-```javascript
-$ convert-excel-to-json --help
-```
 
 ### Simple conversion
 
@@ -51,7 +33,7 @@ Just gets all the rows, for each sheet, where each row will be represented by an
 
 ```javascript
 'use strict';
-const excelToJson = require('convert-excel-to-json');
+const excelToJson = require('simple-excel-2-json');
 
 const result = excelToJson({
 	sourceFile: 'SOME-EXCEL-FILE.xlsx'
@@ -78,7 +60,7 @@ const result = excelToJson({
 
 ```javascript
 'use strict';
-const excelToJson = require('convert-excel-to-json');
+const excelToJson = require('simple-excel-2-json');
 const fs = require('fs');
 
 const result = excelToJson({
@@ -106,7 +88,7 @@ You will notice that if your sheet has some top rows setup as a header (it is ve
 
 ```javascript
 'use strict';
-const excelToJson = require('convert-excel-to-json');
+const excelToJson = require('simple-excel-2-json');
 
 const result = excelToJson({
 	sourceFile: 'SOME-EXCEL-FILE.xlsx',
@@ -125,7 +107,7 @@ Just gets all the rows for each sheet defined on the config object
 
 ```javascript
 'use strict';
-const excelToJson = require('convert-excel-to-json');
+const excelToJson = require('simple-excel-2-json');
 
 const result = excelToJson({
 	sourceFile: 'SOME-EXCEL-FILE.xlsx',
@@ -152,7 +134,7 @@ Gets all the rows, for each sheet, but defining which columns should be returned
 
 ```javascript
 'use strict';
-const excelToJson = require('convert-excel-to-json');
+const excelToJson = require('simple-excel-2-json');
 
 const result = excelToJson({
 	sourceFile: 'SOME-EXCEL-FILE.xlsx',
@@ -179,7 +161,7 @@ Gets all the rows, for each sheet, but defining which columns should be returned
 
 ```javascript
 'use strict';
-const excelToJson = require('convert-excel-to-json');
+const excelToJson = require('simple-excel-2-json');
 
 const result = excelToJson({
 	sourceFile: 'SOME-EXCEL-FILE.xlsx',
@@ -246,7 +228,7 @@ A value from a specific cell can be defined as a key name (e.g. `{ A: '{{A1}}' }
 
 ```javascript
 'use strict';
-const excelToJson = require('convert-excel-to-json');
+const excelToJson = require('simple-excel-2-json');
 
 const result = excelToJson({
 	sourceFile: 'SOME-EXCEL-FILE.xlsx',
@@ -280,7 +262,7 @@ To return all the data but having the object keys named as a row header found at
 
 ```javascript
 'use strict';
-const excelToJson = require('convert-excel-to-json');
+const excelToJson = require('simple-excel-2-json');
 
 const result = excelToJson({
 	sourceFile: 'SOME-EXCEL-FILE.xlsx',
@@ -314,7 +296,7 @@ A specific range can be defined. Also like the previous configs, for all the she
 
 ```javascript
 'use strict';
-const excelToJson = require('convert-excel-to-json');
+const excelToJson = require('simple-excel-2-json');
 
 const result = excelToJson({
 	sourceFile: 'SOME-EXCEL-FILE.xlsx',
@@ -345,7 +327,7 @@ const result = excelToJson({
 
 ```javascript
 'use strict';
-const excelToJson = require('convert-excel-to-json');
+const excelToJson = require('simple-excel-2-json');
 
 const result = excelToJson({
 	sourceFile: 'SOME-EXCEL-FILE.xlsx',
